@@ -1,0 +1,21 @@
+{
+  "name": "magella",
+  "description": "The Story Project",
+  "authors": [
+    "Kodeveloper Corporation"
+  ],
+  "keywords": [
+    "magella",
+    "story",
+    "kodeveloper"
+  ],
+  "homepage": "https://github.com/kodeveloper/magella",
+  "moduleType": [],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

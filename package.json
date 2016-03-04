@@ -1,8 +1,7 @@
 {
   "name": "magella",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "The Story Project",
   "dependencies": {
     "gulp": "^3.9.1"
   },
@@ -25,7 +24,6 @@
     "kodeveloper"
   ],
   "author": "Kodeveloper Corporation",
-  "license": "ISC",
   "bugs": {
     "url": "https://github.com/kodeveloper/magella/issues"
   },
