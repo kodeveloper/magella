@@ -37,3 +37,8 @@ build/
 dist/
 maps/
 assets/other/
+
+# Other #
+#####################
+semantic.json
+semantic/
