@@ -34,9 +34,12 @@
     "yamljs": "^0.2.6"
   },
   "devDependencies": {
+    "browser-sync": "^2.11.1",
     "event-stream": "^3.3.2",
     "gulp": "^3.9.1",
+    "gulp-compass": "^2.1.0",
     "gulp-concat": "^2.6.0",
+    "gulp-rename": "^1.2.2",
     "gulp-uglify": "^1.5.3"
   },
   "scripts": {

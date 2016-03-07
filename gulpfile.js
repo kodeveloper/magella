@@ -1,17 +1,22 @@
-var gulp = require('gulp');
-var uglify = require('gulp-uglify');
-var concat = require('gulp-concat');
-var es = require('event-stream');
+var gulp            = require('gulp'),
+    uglify          = require('gulp-uglify'),
+    concat          = require('gulp-concat'),
+    es              = require('event-stream'),
+    rename          = require('gulp-rename'),
+    compass         = require('gulp-compass'),
+    prefixer        = require('gulp-autoprefixer'),
+    browserSync     = require('browser-sync');
 
 //myFirstGulpTask
-gulp.task('default', ['scripts, watch']);
+gulp.task('default', ['scripts']);
 
 gulp.task('scripts', function(){
-    gulp.src('assets/js/*.js')
+    gulp.src('app/assets/js/*.js')
+    .pipe(rename({suffix: '.min'}))
     .pipe(uglify())
-    .pipe(gulp.dest('dist'));
+    .pipe(gulp.dest('app/dist/js'));
 });
 
-gulp.watch(function(){
-    gulp.watch('assets/js/*js', ['scripts']);
+gulp.watch('watch', function(){
+    gulp.watch('app/assets/js/*.js', ['scripts']);
 });
