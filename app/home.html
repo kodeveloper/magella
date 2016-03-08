@@ -8,10 +8,10 @@
         <script src="assets/js/ext/flowtype.js" type="text/javascript"></script>
         <script src="assets/js/ext/pace.min.js" type="text/javascript"></script>
         <script src="semantic/dist/semantic.min.js"></script>
-        <script src="assets/js/script.js" type="text/javascript"></script>
         <link rel="stylesheet" type="text/css" href="semantic/dist/semantic.min.css">
         <link rel="stylesheet" href="assets/css/style.css">
         <link rel="stylesheet" href="assets/css/ext/normalize.css">
+        <link rel="stylesheet" href="assets/css/ext/font-awesome.min.css">
         <link rel="stylesheet" href="assets/css/ext/pace-theme-flash.css">
         <link rel="stylesheet" href="assets/css/ext/reset.css">
     </head>
@@ -31,20 +31,35 @@
                 </div>
             </nav>
             <div id="welcomeContent" class="clear">
-                <section id="slogan">
+                <section id="slogan" class="two coloumn">
                     Magella'nın <span>Bıraktığı Yerden...</span>
                 </section>
                 <div id="separator"></div>
-                <section id="loginForms">
+                <section id="loginForms" class="two coloumn">
                     <div class="loginFormsArea">
-                        <form action="#" method="POST">
-                            <input type="text" placeholder="e-posta"/>
-                            <input type="text" placeholder="şifre"/>
+                        <form action="#" method="POST" class="ui inverted form">
+                            <div class="field">
+                            <label>E-Posta</label>
+                                <input type="text" name="e-mail" placeholder="E-Posta">
+                            </div>
+                            <div class="field">
+                            <label>Şifre</label>
+                                <input type="password" name="pw" placeholder="Şifre">
+                            </div>
                             <span>Unuttum?</span>
-                            <label><input type="checkbox" /> Beni Hatırla</label>
-                            <input type="submit" value="Giriş"/>
+                            <div class="field">
+                            <div class="ui toggle checkbox">
+                              <input type="checkbox" tabindex="0" class="hidden">
+                              <label>Beni Hatırla</label>
+                            </div>
+                          </div>
+                          <button class="ui button" type="submit">Giriş</button>
                         </form>
-                        <div class="loginFormSeparator"></div>
+                        <div class="loginOther">
+                            <div class="ui horizontal divider">ya da</div>
+                                <i class="facebook icon"></i>
+                                <i class="twitter icon"></i>
+                        </div>
                     </div>
                 </section>
             </div>
@@ -65,5 +80,7 @@
                 <li><a href="#"><i class="de flag"></i></a></li>
             </ul>
         </footer>
+        <!-- scripts -->
+        <script src="assets/js/script.js" type="text/javascript"></script>
     </body>
 </html>

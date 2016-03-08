@@ -3,11 +3,12 @@
 @import url(http://fonts.googleapis.com/css?family=Share+Tech+Mono);
 @font-face {
     font-family: 'Echinos Park';
-    src: url(../font/echinos.ttf);
+    src: url(../fonts/echinos.ttf);
 }
 * {
     font-family: 'Open Sans', sans-serif !important;
 }
+html, body { overflow: hidden; }
 body {
     color: #fff;
     background: url(../../images/bike-bg.jpg) no-repeat center center fixed;
@@ -26,7 +27,7 @@ body {
     height: 100% !important;
     background: #000;
     display: block;
-    opacity: 0.2;
+    opacity: 0.35;
     position: absolute;
     z-index: -1;
 }
@@ -40,7 +41,11 @@ body {
 #signUpButton {
     float: right;
 }
-#signUpButton button { border-radius: 0; }
+#signUpButton button {
+    border-radius: 0;
+    box-shadow: 0 0 0 1.5px #fff inset!important;
+    font-weight: normal;
+}
 article{ padding: 20px !important; }
 #slogan{
     font: 70pt 'Echinos Park' !important;
@@ -68,21 +73,27 @@ article{ padding: 20px !important; }
     left: 50%;
 }
 .loginFormsArea{
-    width: 100%;
+    width: 80%;
     height: 100%;
     background: rgba(0, 0, 0, 0.4);
+    margin: 0 auto;
 }
-input[type=text]{
+.loginFormsArea form{
+    width: 70% !important;
+    margin: 0 auto;
+    padding: 10em 0;
+}
+input[type=text], input[type=password]{
     border: 0;
-    margin: 10px;
-    border-bottom: 4px solid #FFF;
+    border-bottom: 1.5px solid #FFF;
     width: 250px;
-    height: 40px;
+    height: 35px;
     padding: 10px;
     outline: none;
     font-size: 15px;
     background: rgba(255, 255, 255, 0.2);
     color: #fff;
+    display: block;
 }
 /* IE 6 */
 * html footer.footerContainer {

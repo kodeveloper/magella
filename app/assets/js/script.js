@@ -2,7 +2,10 @@ function overlayResize() {
     var windowHeight = jQuery(window).height();
     jQuery('#overlay').height(windowHeight);
 }
-
+function semanticFormClick(){
+    $('.ui.checkbox').checkbox();
+    $('.ui.radio.checkbox').checkbox();
+}
 $(document).ready(function() {
      setInterval(function() {
             var val = 1;
@@ -13,6 +16,7 @@ $(document).ready(function() {
             $(".flickr").css("text-shadow", "white 0 0 " + val + "px");
      }, 200);
      overlayResize();
+     semanticFormClick();
 });
 jQuery(this).on('resize', function() {
     overlayResize();
